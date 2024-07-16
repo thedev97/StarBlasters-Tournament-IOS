@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7723DD2E2C4080F200B4A960 /* MatchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7723DD2D2C4080F200B4A960 /* MatchesViewModel.swift */; };
+		7723DD322C40815B00B4A960 /* MatchesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7723DD312C40815B00B4A960 /* MatchesTableViewCell.xib */; };
+		7723DD332C40815B00B4A960 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7723DD302C40815B00B4A960 /* MatchesTableViewCell.swift */; };
+		772B5F6A2C40406F0023C8F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F692C40406F0023C8F2 /* AppDelegate.swift */; };
+		772B5F6C2C40406F0023C8F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F6B2C40406F0023C8F2 /* SceneDelegate.swift */; };
+		772B5F732C4040700023C8F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772B5F722C4040700023C8F2 /* Assets.xcassets */; };
+		772B5F852C40433E0023C8F2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F842C40433E0023C8F2 /* Player.swift */; };
+		772B5F872C40435D0023C8F2 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F862C40435D0023C8F2 /* Matches.swift */; };
+		772B5F892C40437B0023C8F2 /* PointsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F882C40437B0023C8F2 /* PointsTableViewModel.swift */; };
+		772B5F8D2C40480E0023C8F2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F8C2C40480E0023C8F2 /* NetworkError.swift */; };
+		772B5F8F2C40483D0023C8F2 /* NetworkActivityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F8E2C40483D0023C8F2 /* NetworkActivityState.swift */; };
+		772B5F912C4048920023C8F2 /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F902C4048920023C8F2 /* URLProvider.swift */; };
+		772B5F932C4048C20023C8F2 /* APIRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F922C4048C20023C8F2 /* APIRequestHelper.swift */; };
+		772B5F962C4049950023C8F2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F952C4049950023C8F2 /* AppConstants.swift */; };
+		772B5F982C4049B90023C8F2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F972C4049B90023C8F2 /* NetworkManager.swift */; };
+		772B5F9C2C404B7C0023C8F2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F9B2C404B7C0023C8F2 /* Environment.swift */; };
+		772B5F9F2C404C000023C8F2 /* TournamentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5F9E2C404C000023C8F2 /* TournamentRepository.swift */; };
+		772B5FC22C404F210023C8F2 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FBB2C404F200023C8F2 /* Raleway-SemiBold.ttf */; };
+		772B5FC32C404F210023C8F2 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FBC2C404F210023C8F2 /* Raleway-Black.ttf */; };
+		772B5FC42C404F210023C8F2 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FBD2C404F210023C8F2 /* Raleway-Bold.ttf */; };
+		772B5FC52C404F210023C8F2 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FBE2C404F210023C8F2 /* Raleway-Medium.ttf */; };
+		772B5FC62C404F210023C8F2 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FBF2C404F210023C8F2 /* Raleway-Regular.ttf */; };
+		772B5FC72C404F210023C8F2 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FC02C404F210023C8F2 /* Raleway-Italic.ttf */; };
+		772B5FC82C404F210023C8F2 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FC12C404F210023C8F2 /* Raleway-Light.ttf */; };
+		772B5FCA2C4050530023C8F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FC92C4050530023C8F2 /* LaunchScreen.storyboard */; };
+		772B5FCD2C4050C20023C8F2 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5FCC2C4050C20023C8F2 /* AppColors.swift */; };
+		772B5FD02C4051100023C8F2 /* UiView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5FCF2C4051100023C8F2 /* UiView+Extension.swift */; };
+		772B5FD22C4051560023C8F2 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5FD12C4051560023C8F2 /* FontStyles.swift */; };
+		772B5FD72C4052690023C8F2 /* PointsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5FD52C4052690023C8F2 /* PointsTableViewController.swift */; };
+		772B5FD82C4052690023C8F2 /* PointsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FD62C4052690023C8F2 /* PointsTableViewController.xib */; };
+		772B5FDB2C40527C0023C8F2 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772B5FD92C40527C0023C8F2 /* MatchesViewController.swift */; };
+		772B5FDC2C40527C0023C8F2 /* MatchesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FDA2C40527C0023C8F2 /* MatchesViewController.xib */; };
+		77CFA0B82C405D69006D5060 /* PointsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFA0B62C405D69006D5060 /* PointsTableViewCell.swift */; };
+		77CFA0B92C405D69006D5060 /* PointsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77CFA0B72C405D69006D5060 /* PointsTableViewCell.xib */; };
+		A237FF2FFBE44AC8AC5F7ADB /* libPods-StarWarsBlastersTournament.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7FA9FD48C46AE111CF2C2 /* libPods-StarWarsBlastersTournament.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38968D88FB2395F43633352E /* Pods-StarWarsBlastersTournament.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsBlastersTournament.debug.xcconfig"; path = "Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament.debug.xcconfig"; sourceTree = "<group>"; };
+		6F38282732FE302F20E5D15F /* Pods-StarWarsBlastersTournament.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsBlastersTournament.release.xcconfig"; path = "Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament.release.xcconfig"; sourceTree = "<group>"; };
+		7723DD2D2C4080F200B4A960 /* MatchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewModel.swift; sourceTree = "<group>"; };
+		7723DD302C40815B00B4A960 /* MatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewCell.swift; sourceTree = "<group>"; };
+		7723DD312C40815B00B4A960 /* MatchesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesTableViewCell.xib; sourceTree = "<group>"; };
+		772B5F662C40406F0023C8F2 /* StarWarsBlastersTournament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsBlastersTournament.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		772B5F692C40406F0023C8F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		772B5F6B2C40406F0023C8F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		772B5F722C4040700023C8F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		772B5F772C4040700023C8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772B5F842C40433E0023C8F2 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		772B5F862C40435D0023C8F2 /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
+		772B5F882C40437B0023C8F2 /* PointsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsTableViewModel.swift; sourceTree = "<group>"; };
+		772B5F8C2C40480E0023C8F2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		772B5F8E2C40483D0023C8F2 /* NetworkActivityState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityState.swift; sourceTree = "<group>"; };
+		772B5F902C4048920023C8F2 /* URLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
+		772B5F922C4048C20023C8F2 /* APIRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestHelper.swift; sourceTree = "<group>"; };
+		772B5F952C4049950023C8F2 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		772B5F972C4049B90023C8F2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		772B5F9B2C404B7C0023C8F2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		772B5F9E2C404C000023C8F2 /* TournamentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentRepository.swift; sourceTree = "<group>"; };
+		772B5FBB2C404F200023C8F2 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		772B5FBC2C404F210023C8F2 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		772B5FBD2C404F210023C8F2 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		772B5FBE2C404F210023C8F2 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		772B5FBF2C404F210023C8F2 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		772B5FC02C404F210023C8F2 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		772B5FC12C404F210023C8F2 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		772B5FC92C4050530023C8F2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		772B5FCC2C4050C20023C8F2 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		772B5FCF2C4051100023C8F2 /* UiView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiView+Extension.swift"; sourceTree = "<group>"; };
+		772B5FD12C4051560023C8F2 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		772B5FD52C4052690023C8F2 /* PointsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsTableViewController.swift; sourceTree = "<group>"; };
+		772B5FD62C4052690023C8F2 /* PointsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointsTableViewController.xib; sourceTree = "<group>"; };
+		772B5FD92C40527C0023C8F2 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		772B5FDA2C40527C0023C8F2 /* MatchesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesViewController.xib; sourceTree = "<group>"; };
+		77CFA0B62C405D69006D5060 /* PointsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsTableViewCell.swift; sourceTree = "<group>"; };
+		77CFA0B72C405D69006D5060 /* PointsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointsTableViewCell.xib; sourceTree = "<group>"; };
+		B9F7FA9FD48C46AE111CF2C2 /* libPods-StarWarsBlastersTournament.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarWarsBlastersTournament.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		772B5F632C40406F0023C8F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A237FF2FFBE44AC8AC5F7ADB /* libPods-StarWarsBlastersTournament.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7723DD2F2C40813600B4A960 /* MatchesTableView */ = {
+			isa = PBXGroup;
+			children = (
+				7723DD302C40815B00B4A960 /* MatchesTableViewCell.swift */,
+				7723DD312C40815B00B4A960 /* MatchesTableViewCell.xib */,
+			);
+			path = MatchesTableView;
+			sourceTree = "<group>";
+		};
+		772B5F5D2C40406F0023C8F2 = {
+			isa = PBXGroup;
+			children = (
+				772B5F682C40406F0023C8F2 /* StarWarsBlastersTournament */,
+				772B5F672C40406F0023C8F2 /* Products */,
+				E7DEC787FC5EE3F22A77308E /* Pods */,
+				B8C7B78E7D616EA4C4215603 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		772B5F672C40406F0023C8F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				772B5F662C40406F0023C8F2 /* StarWarsBlastersTournament.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		772B5F682C40406F0023C8F2 /* StarWarsBlastersTournament */ = {
+			isa = PBXGroup;
+			children = (
+				772B5F8A2C4044DD0023C8F2 /* Application Delegate */,
+				772B5F9A2C404B6A0023C8F2 /* Configs */,
+				772B5F992C404A600023C8F2 /* ViewControllers */,
+				772B5F7E2C4041420023C8F2 /* Views */,
+				772B5F7F2C40414E0023C8F2 /* ViewModels */,
+				772B5F7D2C40413C0023C8F2 /* Models */,
+				772B5F9D2C404BEE0023C8F2 /* Repositories */,
+				772B5F8B2C4047F10023C8F2 /* Networks */,
+				772B5FCE2C4051010023C8F2 /* Extensions */,
+				772B5F942C40497F0023C8F2 /* Utilities */,
+				772B5FCB2C4050B10023C8F2 /* Styles */,
+				772B5F812C40415A0023C8F2 /* Resources */,
+				772B5F722C4040700023C8F2 /* Assets.xcassets */,
+				772B5F772C4040700023C8F2 /* Info.plist */,
+				772B5FC92C4050530023C8F2 /* LaunchScreen.storyboard */,
+			);
+			path = StarWarsBlastersTournament;
+			sourceTree = "<group>";
+		};
+		772B5F7D2C40413C0023C8F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				772B5F842C40433E0023C8F2 /* Player.swift */,
+				772B5F862C40435D0023C8F2 /* Matches.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		772B5F7E2C4041420023C8F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				772B5FD62C4052690023C8F2 /* PointsTableViewController.xib */,
+				772B5FDA2C40527C0023C8F2 /* MatchesViewController.xib */,
+				77CFA0AF2C405C67006D5060 /* CustomViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		772B5F7F2C40414E0023C8F2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				772B5F882C40437B0023C8F2 /* PointsTableViewModel.swift */,
+				7723DD2D2C4080F200B4A960 /* MatchesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		772B5F812C40415A0023C8F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				772B5FBA2C404EEB0023C8F2 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		772B5F8A2C4044DD0023C8F2 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				772B5F692C40406F0023C8F2 /* AppDelegate.swift */,
+				772B5F6B2C40406F0023C8F2 /* SceneDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		772B5F8B2C4047F10023C8F2 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				772B5F8C2C40480E0023C8F2 /* NetworkError.swift */,
+				772B5F8E2C40483D0023C8F2 /* NetworkActivityState.swift */,
+				772B5F902C4048920023C8F2 /* URLProvider.swift */,
+				772B5F922C4048C20023C8F2 /* APIRequestHelper.swift */,
+				772B5F972C4049B90023C8F2 /* NetworkManager.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		772B5F942C40497F0023C8F2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				772B5F952C4049950023C8F2 /* AppConstants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		772B5F992C404A600023C8F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				772B5FD52C4052690023C8F2 /* PointsTableViewController.swift */,
+				772B5FD92C40527C0023C8F2 /* MatchesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		772B5F9A2C404B6A0023C8F2 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				772B5F9B2C404B7C0023C8F2 /* Environment.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		772B5F9D2C404BEE0023C8F2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				772B5F9E2C404C000023C8F2 /* TournamentRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		772B5FBA2C404EEB0023C8F2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				772B5FBC2C404F210023C8F2 /* Raleway-Black.ttf */,
+				772B5FBD2C404F210023C8F2 /* Raleway-Bold.ttf */,
+				772B5FC02C404F210023C8F2 /* Raleway-Italic.ttf */,
+				772B5FC12C404F210023C8F2 /* Raleway-Light.ttf */,
+				772B5FBE2C404F210023C8F2 /* Raleway-Medium.ttf */,
+				772B5FBF2C404F210023C8F2 /* Raleway-Regular.ttf */,
+				772B5FBB2C404F200023C8F2 /* Raleway-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		772B5FCB2C4050B10023C8F2 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				772B5FCC2C4050C20023C8F2 /* AppColors.swift */,
+				772B5FD12C4051560023C8F2 /* FontStyles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		772B5FCE2C4051010023C8F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				772B5FCF2C4051100023C8F2 /* UiView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77CFA0AF2C405C67006D5060 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				77CFA0B02C405C76006D5060 /* TableViewCell */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		77CFA0B02C405C76006D5060 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				77CFA0B12C405C8C006D5060 /* PointsTableView */,
+				7723DD2F2C40813600B4A960 /* MatchesTableView */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		77CFA0B12C405C8C006D5060 /* PointsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				77CFA0B62C405D69006D5060 /* PointsTableViewCell.swift */,
+				77CFA0B72C405D69006D5060 /* PointsTableViewCell.xib */,
+			);
+			path = PointsTableView;
+			sourceTree = "<group>";
+		};
+		B8C7B78E7D616EA4C4215603 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9F7FA9FD48C46AE111CF2C2 /* libPods-StarWarsBlastersTournament.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7DEC787FC5EE3F22A77308E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38968D88FB2395F43633352E /* Pods-StarWarsBlastersTournament.debug.xcconfig */,
+				6F38282732FE302F20E5D15F /* Pods-StarWarsBlastersTournament.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		772B5F652C40406F0023C8F2 /* StarWarsBlastersTournament */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772B5F7A2C4040700023C8F2 /* Build configuration list for PBXNativeTarget "StarWarsBlastersTournament" */;
+			buildPhases = (
+				995E4D3D1027A5269933CFAB /* [CP] Check Pods Manifest.lock */,
+				772B5F622C40406F0023C8F2 /* Sources */,
+				772B5F632C40406F0023C8F2 /* Frameworks */,
+				772B5F642C40406F0023C8F2 /* Resources */,
+				7B8E1111F250882AFAE01C62 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarWarsBlastersTournament;
+			productName = StarWarsBlastersTournament;
+			productReference = 772B5F662C40406F0023C8F2 /* StarWarsBlastersTournament.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		772B5F5E2C40406F0023C8F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					772B5F652C40406F0023C8F2 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 772B5F612C40406F0023C8F2 /* Build configuration list for PBXProject "StarWarsBlastersTournament" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 772B5F5D2C40406F0023C8F2;
+			productRefGroup = 772B5F672C40406F0023C8F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				772B5F652C40406F0023C8F2 /* StarWarsBlastersTournament */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		772B5F642C40406F0023C8F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7723DD322C40815B00B4A960 /* MatchesTableViewCell.xib in Resources */,
+				77CFA0B92C405D69006D5060 /* PointsTableViewCell.xib in Resources */,
+				772B5FCA2C4050530023C8F2 /* LaunchScreen.storyboard in Resources */,
+				772B5FC32C404F210023C8F2 /* Raleway-Black.ttf in Resources */,
+				772B5FC52C404F210023C8F2 /* Raleway-Medium.ttf in Resources */,
+				772B5FC22C404F210023C8F2 /* Raleway-SemiBold.ttf in Resources */,
+				772B5FD82C4052690023C8F2 /* PointsTableViewController.xib in Resources */,
+				772B5FC62C404F210023C8F2 /* Raleway-Regular.ttf in Resources */,
+				772B5FC42C404F210023C8F2 /* Raleway-Bold.ttf in Resources */,
+				772B5FC82C404F210023C8F2 /* Raleway-Light.ttf in Resources */,
+				772B5FDC2C40527C0023C8F2 /* MatchesViewController.xib in Resources */,
+				772B5FC72C404F210023C8F2 /* Raleway-Italic.ttf in Resources */,
+				772B5F732C4040700023C8F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B8E1111F250882AFAE01C62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		995E4D3D1027A5269933CFAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarWarsBlastersTournament-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		772B5F622C40406F0023C8F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772B5F6A2C40406F0023C8F2 /* AppDelegate.swift in Sources */,
+				772B5F9C2C404B7C0023C8F2 /* Environment.swift in Sources */,
+				772B5FDB2C40527C0023C8F2 /* MatchesViewController.swift in Sources */,
+				772B5F852C40433E0023C8F2 /* Player.swift in Sources */,
+				772B5F912C4048920023C8F2 /* URLProvider.swift in Sources */,
+				772B5F6C2C40406F0023C8F2 /* SceneDelegate.swift in Sources */,
+				7723DD2E2C4080F200B4A960 /* MatchesViewModel.swift in Sources */,
+				772B5FD72C4052690023C8F2 /* PointsTableViewController.swift in Sources */,
+				772B5F982C4049B90023C8F2 /* NetworkManager.swift in Sources */,
+				772B5FD22C4051560023C8F2 /* FontStyles.swift in Sources */,
+				772B5F9F2C404C000023C8F2 /* TournamentRepository.swift in Sources */,
+				772B5FD02C4051100023C8F2 /* UiView+Extension.swift in Sources */,
+				772B5F872C40435D0023C8F2 /* Matches.swift in Sources */,
+				772B5F932C4048C20023C8F2 /* APIRequestHelper.swift in Sources */,
+				772B5F8D2C40480E0023C8F2 /* NetworkError.swift in Sources */,
+				772B5F8F2C40483D0023C8F2 /* NetworkActivityState.swift in Sources */,
+				77CFA0B82C405D69006D5060 /* PointsTableViewCell.swift in Sources */,
+				772B5FCD2C4050C20023C8F2 /* AppColors.swift in Sources */,
+				772B5F892C40437B0023C8F2 /* PointsTableViewModel.swift in Sources */,
+				7723DD332C40815B00B4A960 /* MatchesTableViewCell.swift in Sources */,
+				772B5F962C4049950023C8F2 /* AppConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		772B5F782C4040700023C8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		772B5F792C4040700023C8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		772B5F7B2C4040700023C8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38968D88FB2395F43633352E /* Pods-StarWarsBlastersTournament.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsBlastersTournament/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soumya-m.StarWarsBlastersTournament";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		772B5F7C2C4040700023C8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F38282732FE302F20E5D15F /* Pods-StarWarsBlastersTournament.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsBlastersTournament/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soumya-m.StarWarsBlastersTournament";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		772B5F612C40406F0023C8F2 /* Build configuration list for PBXProject "StarWarsBlastersTournament" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772B5F782C4040700023C8F2 /* Debug */,
+				772B5F792C4040700023C8F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772B5F7A2C4040700023C8F2 /* Build configuration list for PBXNativeTarget "StarWarsBlastersTournament" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772B5F7B2C4040700023C8F2 /* Debug */,
+				772B5F7C2C4040700023C8F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 772B5F5E2C40406F0023C8F2 /* Project object */;
+}

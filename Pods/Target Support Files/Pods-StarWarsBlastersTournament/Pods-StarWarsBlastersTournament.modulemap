@@ -1,0 +1,6 @@
+module Pods_StarWarsBlastersTournament {
+  umbrella header "Pods-StarWarsBlastersTournament-umbrella.h"
+
+  export *
+  module * { export * }
+}
