@@ -41,12 +41,11 @@
 		772B5FDC2C40527C0023C8F2 /* MatchesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772B5FDA2C40527C0023C8F2 /* MatchesViewController.xib */; };
 		77CFA0B82C405D69006D5060 /* PointsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CFA0B62C405D69006D5060 /* PointsTableViewCell.swift */; };
 		77CFA0B92C405D69006D5060 /* PointsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77CFA0B72C405D69006D5060 /* PointsTableViewCell.xib */; };
-		A237FF2FFBE44AC8AC5F7ADB /* libPods-StarWarsBlastersTournament.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F7FA9FD48C46AE111CF2C2 /* libPods-StarWarsBlastersTournament.a */; };
+		CF7A7D516D2F8C1692A8DD62 /* Pods_StarWarsBlastersTournament.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8CB1FD2A3E8CD26730A529B /* Pods_StarWarsBlastersTournament.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38968D88FB2395F43633352E /* Pods-StarWarsBlastersTournament.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsBlastersTournament.debug.xcconfig"; path = "Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament.debug.xcconfig"; sourceTree = "<group>"; };
-		6F38282732FE302F20E5D15F /* Pods-StarWarsBlastersTournament.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsBlastersTournament.release.xcconfig"; path = "Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament.release.xcconfig"; sourceTree = "<group>"; };
+		563A01B7A359B29ED2C9C156 /* Pods-StarWarsBlastersTournament.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsBlastersTournament.release.xcconfig"; path = "Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament.release.xcconfig"; sourceTree = "<group>"; };
 		7723DD2D2C4080F200B4A960 /* MatchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewModel.swift; sourceTree = "<group>"; };
 		7723DD302C40815B00B4A960 /* MatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewCell.swift; sourceTree = "<group>"; };
 		7723DD312C40815B00B4A960 /* MatchesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesTableViewCell.xib; sourceTree = "<group>"; };
@@ -83,7 +82,8 @@
 		772B5FDA2C40527C0023C8F2 /* MatchesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesViewController.xib; sourceTree = "<group>"; };
 		77CFA0B62C405D69006D5060 /* PointsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsTableViewCell.swift; sourceTree = "<group>"; };
 		77CFA0B72C405D69006D5060 /* PointsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PointsTableViewCell.xib; sourceTree = "<group>"; };
-		B9F7FA9FD48C46AE111CF2C2 /* libPods-StarWarsBlastersTournament.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarWarsBlastersTournament.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC3FC7624EF04E8DD2784F6 /* Pods-StarWarsBlastersTournament.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsBlastersTournament.debug.xcconfig"; path = "Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament.debug.xcconfig"; sourceTree = "<group>"; };
+		A8CB1FD2A3E8CD26730A529B /* Pods_StarWarsBlastersTournament.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarsBlastersTournament.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A237FF2FFBE44AC8AC5F7ADB /* libPods-StarWarsBlastersTournament.a in Frameworks */,
+				CF7A7D516D2F8C1692A8DD62 /* Pods_StarWarsBlastersTournament.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 				772B5F682C40406F0023C8F2 /* StarWarsBlastersTournament */,
 				772B5F672C40406F0023C8F2 /* Products */,
 				E7DEC787FC5EE3F22A77308E /* Pods */,
-				B8C7B78E7D616EA4C4215603 /* Frameworks */,
+				F2D60A629C0D5E721AA547A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -294,21 +294,21 @@
 			path = PointsTableView;
 			sourceTree = "<group>";
 		};
-		B8C7B78E7D616EA4C4215603 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B9F7FA9FD48C46AE111CF2C2 /* libPods-StarWarsBlastersTournament.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E7DEC787FC5EE3F22A77308E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				38968D88FB2395F43633352E /* Pods-StarWarsBlastersTournament.debug.xcconfig */,
-				6F38282732FE302F20E5D15F /* Pods-StarWarsBlastersTournament.release.xcconfig */,
+				8FC3FC7624EF04E8DD2784F6 /* Pods-StarWarsBlastersTournament.debug.xcconfig */,
+				563A01B7A359B29ED2C9C156 /* Pods-StarWarsBlastersTournament.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F2D60A629C0D5E721AA547A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8CB1FD2A3E8CD26730A529B /* Pods_StarWarsBlastersTournament.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,11 +318,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772B5F7A2C4040700023C8F2 /* Build configuration list for PBXNativeTarget "StarWarsBlastersTournament" */;
 			buildPhases = (
-				995E4D3D1027A5269933CFAB /* [CP] Check Pods Manifest.lock */,
+				2B2DFEDF260FFA36C3F70A7F /* [CP] Check Pods Manifest.lock */,
 				772B5F622C40406F0023C8F2 /* Sources */,
 				772B5F632C40406F0023C8F2 /* Frameworks */,
 				772B5F642C40406F0023C8F2 /* Resources */,
-				7B8E1111F250882AFAE01C62 /* [CP] Copy Pods Resources */,
+				CD49327C8AC3E113401BF1BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,24 +390,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7B8E1111F250882AFAE01C62 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		995E4D3D1027A5269933CFAB /* [CP] Check Pods Manifest.lock */ = {
+		2B2DFEDF260FFA36C3F70A7F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,6 +410,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD49327C8AC3E113401BF1BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarWarsBlastersTournament/Pods-StarWarsBlastersTournament-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -584,7 +584,7 @@
 		};
 		772B5F7B2C4040700023C8F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38968D88FB2395F43633352E /* Pods-StarWarsBlastersTournament.debug.xcconfig */;
+			baseConfigurationReference = 8FC3FC7624EF04E8DD2784F6 /* Pods-StarWarsBlastersTournament.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -596,6 +596,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,7 +612,7 @@
 		};
 		772B5F7C2C4040700023C8F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F38282732FE302F20E5D15F /* Pods-StarWarsBlastersTournament.release.xcconfig */;
+			baseConfigurationReference = 563A01B7A359B29ED2C9C156 /* Pods-StarWarsBlastersTournament.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -623,6 +624,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
